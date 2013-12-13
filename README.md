@@ -13,34 +13,34 @@ Run remote terminal commands using [Websocketd](https://github.com/joewalnes/web
 ## Run Commands 
 press `enter` to connect and start running commands
 
-ls
+ls:
 
     onmessage» ls 
     onmessage README.md commands.sh websocketd 
 
-pwd
+pwd:
 
     onmessage» pwd 
-		onmessage /Users/ioannis/Development/websockets
+    onmessage /Users/ioannis/Development/websockets
 
-whoami
+whoami:
 
-		    onmessage» whoami 
-				onmessage ioannis
+    onmessage» whoami 
+    onmessage ioannis
 
-with params
+with params:
 
-				onmessage» git init
-				onmessage Initialized empty Git repository in /Users/ioannis/Development/websockets/.git/ 
+    onmessage» git init
+    onmessage Initialized empty Git repository in /Users/ioannis/Development/websockets/.git/ 
 
-with pipes
+with pipes:
 
-				onmessage» ls | grep READ 
-				onmessage README.md 
+    onmessage» ls | grep READ 
+    onmessage README.md 
 
 
-assigning variables
+assigning variables:
 
-								onmessage» var="my var" 
-								onmessage» echo $var 
-								onmessage my var
+    onmessage» var="my var" 
+    onmessage» echo $var 
+    onmessage my var
